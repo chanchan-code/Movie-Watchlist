@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", 'Segoe UI', Verdana, sans-serif;
+    background-color: #121212;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.795)),
+    url(/images//wall\ of\ movie\ posters\ on_3620105.jpg) 100% 100% / cover no-repeat;
+}
+
+.hero-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    color: #f1f1f1;
+}
+
+.Search-movie-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-movie-content {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    display: flex;
+}
+
+.search-box {
+    position: relative;
+    color: #A5A5A5;
+    font-family: inherit;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 0px 10px 40px;
+    font-size: 16px;
+    background: #2E2E2F;
+    color: inherit;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.search-box .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.search-button {
+    width: 30%;
+    background-color: #4B4B4B;
+    color: #f1f1f1;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+/* typography */
+
+.hero-title {
+    font-size: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 0.9rem;
+}
