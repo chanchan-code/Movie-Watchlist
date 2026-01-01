@@ -38,12 +38,15 @@ body {
     transform: translateY(-50%);
     position: relative;
     display: flex;
+    justify-content: center;
+    width: 80%;
 }
 
 .search-box {
     position: relative;
     color: #A5A5A5;
     font-family: inherit;
+    width: 100%;
 }
 
 .search-box input {
@@ -66,7 +69,7 @@ body {
 }
 
 .search-button {
-    width: 30%;
+    width: 35%;
     background-color: #4B4B4B;
     color: #f1f1f1;
     border: none;
@@ -81,6 +84,113 @@ body {
     font-size: 1.5rem;
 }
 
+.hero-content h1{
+    font-size: 2rem;
+}
+
 .hero-subtitle {
     font-size: 0.9rem;
+}
+
+.movie-list-section {
+    color: #f1f1f1;
+    font-size: 0.8rem;
+}
+
+.movie-title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.movie-list-section p {
+    line-height: 1.5em;
+    margin: 0.5rem 0;
+}
+
+.poster-img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.movie-subcontent {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.movie-list-section {
+    display: grid;
+    grid-template-columns: 1fr min(1200px, 90%) 1fr;
+    row-gap: 3em;
+    grid-template-areas: 
+        ". movie0 ."
+        ". movie1 ."
+        ". movie2 ."
+        ". movie3 ."
+        ". movie4 ."
+        ". movie5 ."
+        ". movie6 ."
+        ". movie7 ."
+        ". movie8 ."
+        ". movie9 ."
+    ;
+}
+
+.movies-list-0 {
+    grid-area: movie0;
+}
+
+.movies-list-1 {
+    grid-area: movie1;
+}
+.movies-list-2 {
+    grid-area: movie2;
+}
+
+.movies-list-3 {
+    grid-area: movie3;
+}
+
+.movies-list-4 {
+    grid-area: movie4;
+}
+
+.movies-list-5 {
+    grid-area: movie5;
+}
+
+.movies-list-6 {
+    grid-area: movie6;
+}
+
+.movies-list-7 {
+    grid-area: movie7;
+}
+
+.movies-list-8 {
+    grid-area: movie8;
+}
+
+.movies-list-9 {
+    grid-area: movie9;
+}
+
+.watch-list-button {
+    background: none;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.plus-sign {
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    color: #1f1f1f;
+    border-radius: 25px;
+}
+
+button i {
+    pointer-events: none;
 }
