@@ -123,65 +123,20 @@ body {
 .movie-list-section {
     display: grid;
     grid-template-columns: 1fr min(1200px, 90%) 1fr;
-    row-gap: 3em;
-    grid-template-areas: 
-        ". movie0 ."
-        ". movie1 ."
-        ". movie2 ."
-        ". movie3 ."
-        ". movie4 ."
-        ". movie5 ."
-        ". movie6 ."
-        ". movie7 ."
-        ". movie8 ."
-        ". movie9 ."
-    ;
+    row-gap: 3rem;
 }
 
-.movies-list-0 {
-    grid-area: movie0;
+.movie-list-section > div {
+    grid-column: 2;
 }
 
-.movies-list-1 {
-    grid-area: movie1;
-}
-.movies-list-2 {
-    grid-area: movie2;
-}
-
-.movies-list-3 {
-    grid-area: movie3;
-}
-
-.movies-list-4 {
-    grid-area: movie4;
-}
-
-.movies-list-5 {
-    grid-area: movie5;
-}
-
-.movies-list-6 {
-    grid-area: movie6;
-}
-
-.movies-list-7 {
-    grid-area: movie7;
-}
-
-.movies-list-8 {
-    grid-area: movie8;
-}
-
-.movies-list-9 {
-    grid-area: movie9;
-}
 
 .watch-list-button {
     background: none;
     border: none;
     color: #f1f1f1;
     cursor: pointer;
+    width: 100px;
 }
 
 .plus-sign {
@@ -193,4 +148,15 @@ body {
 
 button i {
     pointer-events: none;
+    font-size: 1.5rem;
 }
+
+.movie-button-section  {
+    grid-area: btn;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+    align-items: center;
+}
+

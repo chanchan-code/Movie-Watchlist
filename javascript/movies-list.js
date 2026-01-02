@@ -102,12 +102,14 @@ function renderMovieList() {
                             class="watch-list-button"
                             data-imdbid="${movie.imdbID}"
                             >
-                            ${isInWatchlist(movie.imdbID) ? 'Remove' : 'Add'}
+                            ${isInWatchlist(movie.imdbID) ? 
+                                '<span class="plus-sign">-</span>  Remove' : 
+                                `<span class="plus-sign">+</span>  Watchlist`}
                         </button>
                     </div>
                     <p class="movie-plot">${movie.Plot}</p>
                 </div>
-            </div>
+            </div>            
         `)
         .join('')
 }
